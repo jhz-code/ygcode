@@ -23,7 +23,7 @@ class Client
                 'sign'      => $signData['Sign'],
             ]
         ]);
-        return $response;
+        return json_decode($response->getBody(),true);
     }
 
 }

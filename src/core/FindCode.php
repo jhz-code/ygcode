@@ -18,7 +18,7 @@ class FindCode
      */
     static function find(string $url,string $appKey,string $code)
     {
-         return  Client::sendPost('',$code,$appKey);
+         return  Client::sendPost($url,$code,$appKey);
     }
 
 }
