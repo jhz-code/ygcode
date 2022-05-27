@@ -1,6 +1,6 @@
 <?php
 
-namespace Yg\lib;
+namespace ygx\ygcode\lib;
 
 class Sign
 {

@@ -1,5 +1,5 @@
 {
-    "name": "yg/ygcode",
+    "name": "ygx/ygcode",
     "description": "find product  from far  for integral",
     "authors": [
         {
@@ -9,7 +9,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Yg\\ygcode\\": "src/"
+            "ygx\\ygcode\\": "src/"
         }
     },
     "require": {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Yg\lib;
+namespace ygx\ygcode\core;
 
 
 use Psr\Http\Message\ResponseInterface;
