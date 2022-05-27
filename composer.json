@@ -1,0 +1,19 @@
+{
+    "name": "yg/ygcode",
+    "description": "find product  from far  for integral",
+    "authors": [
+        {
+            "name": "zjh",
+            "email": "zhuok520@qq.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Yg\\ygcode\\": "src/"
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "~6.0",
+        "ext-json": "*"
+    }
+}
