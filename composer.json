@@ -9,7 +9,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "ygx\\ygcodes\\": "src/"
+            "yg\\ygcodes\\": "src/"
         }
     },
     "require": {

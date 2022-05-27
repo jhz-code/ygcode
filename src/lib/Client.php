@@ -1,6 +1,6 @@
 <?php
 
-namespace ygx\ygcodes\lib;
+namespace yg\ygcodes\lib;
 use Psr\Http\Message\ResponseInterface;
 
 class Client
