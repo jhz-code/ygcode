@@ -13,12 +13,13 @@ class Client
      * @param $appKey //应用
      * @return ResponseInterface
      */
-    static function sendPost(string $url,$code,$appKey){
+    static function sendPost(string $url,$code,$appKey,$proType){
         $client = new \GuzzleHttp\Client();
-        $signData = Sign::Encryption($code,$appKey);
+        $signData = Sign::Encryption($code,$appKey,$proType);
         $response = $client->post($url, [
             'form_params' => [
                 'code'      => urlencode($code),
+                'type'      => $proType,
                 'noncestr'      => $signData['Noncestr'],
                 'sign'      => $signData['Sign'],
             ]

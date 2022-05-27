@@ -8,11 +8,11 @@ class Sign
     /**
      * 获取通讯加密数据
      */
-     static function Encryption(string $code,string $appKey): array
+     static function Encryption(string $code,string $appKey,$proType): array
      {
         $result['Noncestr'] = self::createNoncestr();
         $key =  $code.$appKey.$result['Noncestr'];
-        $result['Sign'] = md5(md5($key).$appKey);
+        $result['Sign'] = md5(md5($key).$appKey.$proType);
         return $result;
     }
 

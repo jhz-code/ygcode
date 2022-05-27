@@ -14,11 +14,13 @@ class FindCode
      * 查询产品数据
      * @param string $url
      * @param string $appKey
+     * @param string $proType
      * @param string $code
+     * @return ResponseInterface
      */
-    static function find(string $url,string $appKey,string $code)
+    static function find(string $url,string $appKey,string $proType,string $code)
     {
-         return  Client::sendPost($url,$code,$appKey);
+         return  Client::sendPost($url,$code,$appKey,$proType);
     }
 
 }
