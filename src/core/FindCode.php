@@ -4,6 +4,7 @@ namespace yg\ygcodes\core;
 
 
 use Psr\Http\Message\ResponseInterface;
+use yg\ygcodes\lib\Client;
 
 class FindCode
 {
